@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/fitnessApp.css" />
+    <title>Fitness App</title>
+</head>
+
+<body>
+    <!-- Modules -->
+
+    <!-- spacer -->
+    <script src="js/spacer.js"></script>
+    <!-- fitnessApp.User -->
+    <script src="js/user.js"></script>
+    <!-- fitnessApp.userView -->
+    <script src="js/userView.js"></script>
+    <!-- fitnessApp.controller -->
+    <script src="js/controller.js"></script>
+
+    <!-- Start the app -->
+    <script>
+        fitnessApp.userData = {
+            "name": "Mahesha",
+            "sessions": [
+                { "sessionDate": "2017-02-05", "duration": 120 },
+                { "sessionDate": "2017-02-06", "duration": 35 },
+                { "sessionDate": "2017-02-06", "duration": 45 }
+            ]
+        };
+
+        var app = fitnessApp.init(fitnessApp.userData);
+    </script>
+
+</body>
+
+</html>
