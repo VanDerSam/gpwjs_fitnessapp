@@ -1,3 +1,6 @@
+/**
+ * @module userView
+ */
 (function () {
     var getInfo = function (user) {
         var infoString = "\n" + user.name + "\n";

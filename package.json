@@ -9,11 +9,13 @@
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.1"
+    "eslint-plugin-promise": "^5.1.1",
+    "jsdoc": "^3.6.7"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "./node_modules/.bin/eslint js/"
+    "eslint": "./node_modules/.bin/eslint js/",
+    "jsdoc": "./node_modules/.bin/jsdoc js/"
   },
   "keywords": [],
   "author": "",
