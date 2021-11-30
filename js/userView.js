@@ -1,5 +1,4 @@
 (function () {
-
     var getInfo = function (user) {
         var infoString = "\n" + user.name + "\n";
 
@@ -25,5 +24,4 @@
     fitnessApp.userView = {
         render: render
     };
-
 })();
