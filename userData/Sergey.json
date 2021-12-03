@@ -1,0 +1,13 @@
+{
+    "name": "Sergey",
+    "sessions": [
+        {
+            "sessionDate": "2021-11-30",
+            "duration": 45
+        },
+        {
+            "sessionDate": "2021-12-02",
+            "duration": 35
+        }
+    ]
+}

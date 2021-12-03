@@ -1,0 +1,17 @@
+{
+    "name": "Mahesha",
+    "sessions": [
+        {
+            "sessionDate": "2017-02-05",
+            "duration": 120
+        },
+        {
+            "sessionDate": "2017-02-06",
+            "duration": 35
+        },
+        {
+            "sessionDate": "2017-02-06",
+            "duration": 45
+        }
+    ]
+}

@@ -1,26 +1,32 @@
 (function () {
-  
-    var buildUser = function (userData) {
-      var user = new fitnessApp.User(userData.name);
-    
-      userData.sessions.forEach(function (session) {
-        user.addSession(session.sessionDate, session.duration);
-      });
-    
-      return user;
-    };
-    
-    var init = function (userData) {
-      var user = buildUser(userData);
-      
-      fitnessApp.userView.render(user);
+    function loadUser (userId) {
+        var error = fitnessApp.userManager.loadUser(userId, function(user) {
+            fitnessApp.userView.render(user);
+        });
+        if (error !== undefined) {
+            fitnessApp.messageView.render(error);
+        }
+    }
+
+    var init = function () {
+      fitnessApp.userManager.loadUserList("users", function (userList) {
+        if (userList === null || userList.length === 0) {
+            return;
+        }  
+        // fitnessApp.userManager.loadUser(userList[0], function(user) {
+        //     fitnessApp.userView.render(user);
+        // });
+        loadUser(userList[0]);
+    });
       
       return {
         log: function (sessionDate, duration) {
+          var user = fitnessApp.userManager.getCurrentUser();
           user.addSession(sessionDate, duration);
           fitnessApp.userView.render(user);
           return "Thanks for logging your session.";
-        }
+        },
+        loadUser: loadUser
       };
     };
     
