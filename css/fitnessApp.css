@@ -12,3 +12,13 @@ div {
     background: lightyellow;
     display: flex;
   }
+
+  .controls2 {
+    /*
+  margin:2em -2em -1em;
+  padding:3px;
+  */
+  text-align: left;
+  background: lightyellow;
+  /*display: flex;*/
+}
