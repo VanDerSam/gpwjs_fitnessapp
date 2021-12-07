@@ -2,6 +2,8 @@
  * @module userView
  */
 (function () {
+    "use strict";
+
     var getInfo = function (user) {
         var infoString = "\n" + user.name + "\n";
 
@@ -17,7 +19,10 @@
     };
 
     var render = function (user) {
-        console.log(getInfo(user.getData()));
+        //console.log(getInfo(user.getData()));
+
+        var userDiv = document.getElementById("user");
+        userDiv.innerHTML = getInfo(user.getData());
     };
 
     if (window.fitnessApp === undefined) {

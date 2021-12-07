@@ -1,4 +1,6 @@
 (function () {
+    "use strict";
+
     var User = function (name) {
         var sessions = [];
         var totalDuration = 0;

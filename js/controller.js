@@ -5,8 +5,15 @@
         });
         if (error !== undefined) {
             fitnessApp.messageView.render(error);
+        } else {
+            fitnessApp.messageView.clear();
         }
     }
+
+    var loadSelectedUser = function () {
+        var selectedUser = fitnessApp.userListView.getSelectedUser();
+        loadUser(selectedUser);
+    };
 
     var init = function () {
       fitnessApp.userManager.loadUserList("users", function (userList) {
@@ -16,7 +23,11 @@
         // fitnessApp.userManager.loadUser(userList[0], function(user) {
         //     fitnessApp.userView.render(user);
         // });
+        fitnessApp.userListView.render(userList);
         loadUser(userList[0]);
+
+        var buttonLoadUser = document.getElementById("loadUser");
+        buttonLoadUser.addEventListener("click", loadSelectedUser);
     });
       
       return {

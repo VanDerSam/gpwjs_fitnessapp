@@ -1,0 +1,14 @@
+div {
+    white-space: pre;
+    font-family: monospace;
+  }
+
+  .controls {
+      /*
+    margin:2em -2em -1em;
+    padding:3px;
+    */
+    text-align: right;
+    background: lightyellow;
+    display: flex;
+  }
