@@ -25,11 +25,26 @@
     </div>
     <div id="messages"></div>
 
+    <script type="text/template" id="sessionTemplate">
+        <div class="session">
+            <p>{{duration}} minutes on {{sessionDate}}</p>
+        </div>
+    </script>
+
+    <script type="text/template" id="sessionsTotalTemplate">
+        <div class="sessionsTotal">
+            <p>{{totalMinutes}} minutes so far</p>
+            <p>Well done!</p>
+        </div>
+    </script>
+
     <!-- Modules -->
     <!-- spacer -->
     <script src="js/spacer.js"></script>
-    <!-- gpwj -->
+    <!-- gpwj.data -->
     <script src="js/gpwj.js"></script>
+    <!-- gpwj.templates -->
+    <script src="js/gpwj_templates.js"></script>
     <!-- fitnessApp.User -->
     <script src="js/user.js"></script>
     <!-- fitnessApp.messageView -->

@@ -4,21 +4,16 @@ div {
   }
 
   .controls {
-      /*
-    margin:2em -2em -1em;
-    padding:3px;
-    */
     text-align: right;
     background: lightyellow;
     display: flex;
   }
 
   .controls2 {
-    /*
-  margin:2em -2em -1em;
-  padding:3px;
-  */
   text-align: left;
   background: lightyellow;
-  /*display: flex;*/
+}
+
+.session {
+  margin: 0;
 }

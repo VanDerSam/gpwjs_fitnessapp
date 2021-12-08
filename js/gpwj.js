@@ -1,5 +1,5 @@
 /**
- * @module userView
+ * @module gpwj.data
  * A module for loading data files (JSON)
  */
 
